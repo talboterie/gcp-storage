@@ -7,9 +7,7 @@
 [![Quality Score][ico-code-quality]][link-code-quality]
 [![Total Downloads][ico-downloads]][link-downloads]
 
-This is where your description should go. Try and limit it to a paragraph or two, and maybe throw in a mention of what
-PSRs you support to avoid any confusion with users and contributors.
-
+Google Cloud Storage for Laravel using Flysystem.
 
 ## Install
 
@@ -19,11 +17,18 @@ Via Composer
 $ composer require talboterie/google-cloud-storage
 ```
 
-## Usage
+Add a new disks configuration to `config/filesystems.php`
 
-``` php
-$skeleton = new Talboterie\GoogleCloudStorage\Skeleton();
-echo $skeleton->echoPhrase('Hello, Talboterie!');
+```php
+    'disks' => [
+        'gcp-storage' => [
+            'driver' => 'gcp-storage',
+            'prefix' => env('GCP_STORAGE_PREFIX'),
+            'bucket' => env('GCP_STORAGE_BUCKET'),
+            'keyFile' => env('GCP_STORAGE_KEY_FILE'), // Content of the .json file containing the credentials.
+            'keyFilePath' => env('GCP_STORAGE_KEY_FILE_PATH'), // Path to the .json containing the credentials.
+        ],
+    ],
 ```
 
 ## Change log
