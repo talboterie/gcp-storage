@@ -1,19 +1,19 @@
 {
-    "name": "{vendor:kebab}/{package_name:kebab}",
+    "name": "talboterie/google-cloud-storage",
     "type": "library",
-    "description": "{package_description}",
+    "description": "Google Cloud Storage for Laravel",
     "keywords": [
         "laravel",
-        "{vendor}",
-        "{package_name}"
+        "Talboterie",
+        "Google Cloud Storage"
     ],
-    "homepage": "https://talboterie.dev/packages/{package_name:kebab}",
+    "homepage": "https://talboterie.dev/packages/google-cloud-storage",
     "license": "MIT",
     "authors": [
         {
-            "name": "{author_name}",
-            "email": "{author_email}",
-            "homepage": "{author_website}",
+            "name": "Vincent Talbot",
+            "email": "vincent@talbot.ninja",
+            "homepage": "https://vincenttalbot.com",
             "role": "Developer"
         }
     ],
@@ -27,12 +27,12 @@
     },
     "autoload": {
         "psr-4": {
-            "{vendor:no-space}\\{package_name:no-space}\\": "src"
+            "Talboterie\\GoogleCloudStorage\\": "src"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "{vendor:no-space}\\{package_name:no-space}\\Tests\\": "tests"
+            "Talboterie\\GoogleCloudStorage\\Tests\\": "tests"
         }
     },
     "scripts": {
@@ -46,7 +46,7 @@
         },
         "laravel": {
             "providers": [
-                "{vendor:no-space}\\{package_name:no-space}\\{package_name:no-space}ServiceProvider"
+                "Talboterie\\GoogleCloudStorage\\GoogleCloudStorageServiceProvider"
             ]
         }
     },
