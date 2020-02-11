@@ -61,7 +61,7 @@ The MIT License (MIT). Please see [License File](LICENSE.md) for more informatio
 [ico-downloads]: https://img.shields.io/packagist/dt/talboterie/google-cloud-storage.svg?style=flat-square
 
 [link-packagist]: https://packagist.org/packages/talboterie/google-cloud-storage
-[link-travis]: https://travis-ci.org/talboterie/google-cloud-storage
+[link-github]: https://travis-ci.org/talboterie/google-cloud-storage
 [link-codecov]: https://codecov.io/gh/talboterie/google-cloud-storage
 [link-code-quality]: https://scrutinizer-ci.com/g/talboterie/google-cloud-storage
 [link-downloads]: https://packagist.org/packages/talboterie/google-cloud-storage
